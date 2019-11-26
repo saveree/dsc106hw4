@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="main.css">
+<div class="plate">
+  <p class="script"><span>The King of Bollywood</span></p>
+  <p class="shadow text1">Shahrukh</p>
+  <p class="shadow text3">Khan</p>
+  <p class="script"><span>by Saveree Joshipura</span></p>
+
+</div>
+
+
+<p class='script text4'><span>"Very few people can turn their passion into profession. I am one of those lucky few..."</span></p>
+
+
+<img src="srk1.jpg"> 
+
+<font color='white' class = 'text5' size=50>Shahrukh Khan is a famous film actor, television host, and film producer in India. Due to his immense popularity, he is frequently dubbed as the 'King of Bollywood' or 'King Khan.' Shahrukh Khan has acted in more than 85 Hindi films. He is known for being one of the most successful stars in the world. With 3.2 billion fans around the world, title of third richest actor in the world, an honorary award from the government of India (called the Padma Shri), an honorary pHd, and much more accolade, SRK remains my personal favorite! 
+
+<br> Here is a chart of Shahrukh Khan's Global Fan Following: </br>
+
+</p>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container"></div>
+
+<script>
+
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'packedbubble',
+        height: '100%'
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        useHTML: true,
+        pointFormat: '<b>{point.name}:</b> {point.value}k</sub>'
+    },
+    plotOptions: {
+        packedbubble: {
+            minSize: '30%',
+            maxSize: '120%',
+            zMin: 0,
+            zMax: 1000,
+            layoutAlgorithm: {
+                splitSeries: false,
+                gravitationalConstant: 0.02
+            },
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}',
+                filter: {
+                    property: 'y',
+                    operator: '>',
+                    value: 250
+                },
+                style: {
+                    color: 'black',
+                    textOutline: 'none',
+                    fontWeight: 'normal'
+                }
+            }
+        }
+    },
+    series: [{
+        name: 'Europe',
+        data: [{
+            name: 'Poland',
+            value: 56
+        }, {
+            name: 'Germany',
+            value: 76
+        },
+        {
+            name: "Belgium",
+            value: 23
+        },
+        {
+            name: "United Kingdom",
+            value: 378
+        },
+        {
+            name: "Poland",
+            value: 28
+        },
+        {
+            name: "Spain",
+            value: 25
+        },
+        {
+            name: "Ukraine",
+            value: 19
+        },
+        {
+            name: "France",
+            value: 14
+        },
+        {
+            name: "Greece",
+            value: 19
+        },
+        {
+            name: "Austria",
+            value: 24
+        },
+        {
+            name: "Switzerland",
+            value: 68
+        }]
+    }, {
+        name: 'Africa',
+        data: [{
+            name: "Egypt",
+            value: 100
+        },
+        {
+            name: "Nigeria",
+            value: 244
+        },
+        {
+            name: "Zimbabwe",
+            value: 13
+        },
+       
+        {
+            name: "Kenya",
+            value: 79
+        },
+        {
+            name: "Sudan",
+            value: 17.3
+        },
+        {
+            name: "South Africa",
+            value: 46
+        }]
+    }, {
+        name: 'Oceania',
+        data: [{
+            name: "Australia",
+            value: 201
+        },
+        {
+            name: "New Zealand",
+            value: 76
+        }]
+    }, {
+        name: 'North America',
+        data: [
+        {
+            name: "United States",
+            value: 389
+        }, {
+            name: "Canada",
+            value: 149
+        }]
+    }, {
+        name: 'South America',
+        data: [{
+            name: "Peru",
+            value: 188
+        }]
+    }, {
+        name: 'Asia',
+        data: [{
+            name: "China",
+            value: 200
+        },
+        {
+            name: "Japan",
+            value: 89
+        },
+        {
+            name: "Afghanistan",
+            value: 300
+        },
+        {
+            name: "Russia",
+            value: 345
+        },
+        {
+            name: "India",
+            value: 600
+        },
+        {
+            name: "Pakistan",
+            value: 400
+        },
+        {
+            name: "Taiwan",
+            value: 43
+        },
+        {
+            name: "Japan",
+            value: 58
+        },
+        {
+            name: "United Arab Emirates",
+            value: 72
+        }]
+    }]
+});
+
+</script>
+
+<font color='white'> Here are some of his popular movies jumbled together: </font>
+
+<img src="srk2.png"> 
+
+<font color= 'white' size=100> <br>Last, from a die-hard SRK fan to another, here is a calendar with important dates to us fans:</br></font>
+<a href =https://pdfhost.io/v/98NGOeVP_srkcalpdf.pdf>Click on this link to access the SRK calendar!</a>
+
+
+</html>
